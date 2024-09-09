@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start Utility Classes */
+.main-text {
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+
+.main-text h2 span {
+  color: #ffa500;
+}
+
+.container .row {
+  margin-top: 30px;
+}
+
+/* Navbar Start */
+
+header {
+  background: #f9f9f9;
+  border-radius: 10px;
+  top: 0.5rem;
+  left: 2rem; /* Set the left margin */
+  right: 2rem; /* Set the right margin */
+  width: calc(100% - 4rem);
+  position: fixed;
+  z-index: 1000;
+}
+.navbar {
+  width: 100%;
+}
+
+header .navbar .logo img {
+  height: 70px;
+  width: 80px;
+  /* margin-bottom: 1.5rem; */
+}
+
+header .navbar .logo a {
+  font-size: 35px;
+  font-weight: 700px;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+
+  span {
+    color: rgb(255, 111, 0);
+  }
+}
+
+header .navbar-button .navbar-toggler span {
+  color: #ffa500;
+}
+
+@media (max-width: 1200px) {
+  header .form-control,
+  header .btn {
+    display: none;
+  }
+}
+
+.navbar-nav {
+  margin-left: 30px;
+}
+
+.nav-item .nav-link {
+  font-size: 20px;
+  font-weight: 550px;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+  background: #ffa500;
+  color: white;
+}
+
+.navbar form button {
+  background: orange;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+}
+
+/* Home Section Start */
+.section-home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)),
+    url(./images/back4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.section-home .content h4 {
+  color: white;
+  font-size: 38px;
+  font-weight: 550;
+  text-shadow: 0px 1px 1px black;
+}
+
+.section-home .content h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+
+.section-home .content .change-content::after {
+  content: " ";
+  color: #ffa500;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  animation: change-text 10s infinite linear;
+}
+
+@keyframes change-text {
+  0% {
+    content: "FRANCE";
+  }
+  10% {
+    content: "SPAIN";
+  }
+  20% {
+    content: "UNITED STATES";
+  }
+  30% {
+    content: "CHINA";
+  }
+  40% {
+    content: "INDIA";
+  }
+  50% {
+    content: "PAKISTAN";
+  }
+  60% {
+    content: "ITALY";
+  }
+  70% {
+    content: "TURKEY";
+  }
+  80% {
+    content: "MEXICO";
+  }
+  90% {
+    content: "GERMANY";
+  }
+  100% {
+    content: "UNITED KINGDOM";
+  }
+}
+
+.section-home .content p {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 5px;
+}
+
+.section-home .content a {
+  padding: 10px;
+  background: white;
+  color: black;
+  letter-spacing: 1.5px;
+  font-weight: 550;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.section-home .content a:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .section-home {
+    background-position: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-home .content h4 {
+    background-position: 25%;
+  }
+
+  .section-home .content h2 {
+    background-position: 38%;
+  }
+
+  .section-home .content p {
+    background-position: 13%;
+  }
+}
+
+/* Section Book Start */
+.section-book {
+  background: #f9f9f9;
+  padding: 50px;
+}
+
+.section-book .card {
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.section-book form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.section-book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+
+.section-book form .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 1.5px;
+  margin-top: 10px;
+  transition: 0.5s;
+  float: right;
+}
+
+.section-book form .submit:hover {
+  width: 170px;
+}
+
+@media (max-width: 765px);
+ {
+  .section-book {
+    padding: 0;
+  }
+  .section-book .main-text h2 {
+    padding: 20px;
+  }
+}
+
+/* Section Packages Start */
+.section-packages {
+  padding: 50px;
+}
+
+.section-packages .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.section-packages .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.section-packages .card .card-body {
+  background: transparent;
+}
+
+.section-packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.section-packages .card .card-body p {
+  font-size: 15px;
+}
+
+.section-packages .checked {
+  color: #ffa500;
+}
+
+.section-packages .star i {
+  font-size: 15px;
+}
+
+.section-packages .card .card-body h6 {
+  font-size: 20px;
+}
+
+.section-packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.section-packages .card .card-body a:hover {
+  transform: scale(1.1);
+}
+
+/* Section Services Start */
+.section-services {
+  background: #f9f9f9;
+  padding: 50px;
+}
+
+/* .section-services .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.section-services .card:hover {
+  transform: scale(1.2);
+} */
+
+.section-services .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative; /* Ensures the z-index will take effect */
+}
+
+.section-services .card:hover {
+  transform: scale(1.2);
+  z-index: 1; Make sure it's higher than other content but lower than the navbar
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px;
+}
+
+.section-services .card i {
+  font-size: 80px;
+  text-align: center;
+  color: #ffa500;
+  margin: 20px 0;
+}
+
+.section-services .card .card-body {
+  text-align: center;
+}
+
+.section-services .card .card-body h3 {
+  font-weight: 700px;
+}
+
+/* Section Gallary start */
+.section-gallary {
+  margin-top: 50px;
+}
+
+.section-gallary .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+
+.section-gallary .card img {
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.section-gallary .card img:hover {
+  transform: scale(1.4);
+  z-index: 10;
+}
+
+/* Section About Start */
+.section-about {
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+
+.section-about .card,
+.section-about .card img {
+  border-radius: 10px;
+}
+
+.section-about h2 {
+  letter-spacing: 1px;
+  font-weight: 6OO;
+}
+
+.section-about P {
+  font-weight: 5OO;
+}
+
+.section-about .about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+
+.section-about .about-btn:hover {
+  width: 170px;
+}
+
+@media (max-width:765px) {
+  .section-about {
+    padding: 0;
+  }
+
+  
+}
